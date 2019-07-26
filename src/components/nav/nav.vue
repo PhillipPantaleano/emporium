@@ -1,3 +1,7 @@
+<!--
+  Need to figure out a better way to do nav
+-->
+
 <template>
   <div class="main-nav">
     <div class="nav-welcome">
@@ -24,29 +28,23 @@ export default {
 
 <style scoped>
 .main-nav {
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
   color: white;
   background-color: #003366;
   padding: 20px 0;
 }
 
-/* clear the floats after the div columns
-- allows everything to go back to being normal */
-.main-nav:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .nav-welcome {
-  width: 50%;
-  float: left;
+  width: 40%;
   font-size: 24px;
 }
 
 .nav {
-  width: 50%;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
 }
 
 a {
